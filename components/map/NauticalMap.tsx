@@ -1,17 +1,20 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { loadCoastlines } from "@/lib/geo/load-geo";
 import { useMapProjection } from "./use-map-projection";
 import { MapDefs } from "./MapDefs";
 import { CoastlineLayer } from "./CoastlineLayer";
 import { GraticuleLayer } from "./GraticuleLayer";
 import { CompassRose } from "./CompassRose";
+import { PortLayer } from "./PortLayer";
 import { MAP_CONFIG } from "./constants";
+import type { Port } from "@/lib/ports/types";
 
 interface NauticalMapProps {
   width?: number;
   height?: number;
+  ports?: Port[];
   selectedPortIds?: Set<string>;
   onPortSelect?: (portId: string) => void;
 }
@@ -22,8 +25,12 @@ const coastlineData = loadCoastlines();
 export function NauticalMap({
   width = MAP_CONFIG.defaultWidth,
   height = MAP_CONFIG.defaultHeight,
+  ports = [],
+  selectedPortIds = new Set<string>(),
+  onPortSelect,
 }: NauticalMapProps) {
   const { projection, path } = useMapProjection(width, height, coastlineData);
+  const [hoveredPortId, setHoveredPortId] = useState<string | null>(null);
 
   // Compute compass rose position - center of Lake Superior
   const compassPosition = useMemo(() => {
@@ -59,7 +66,19 @@ export function NauticalMap({
       {/* Layer 4: Coastline fills (land over graticule) */}
       <CoastlineLayer features={coastlineData.features} path={path} />
 
-      {/* Layer 5: Compass rose (on water, under future port layer) */}
+      {/* Layer 5: Port markers (above land, below compass rose) */}
+      {ports.length > 0 && (
+        <PortLayer
+          ports={ports}
+          projection={projection}
+          selectedIds={selectedPortIds}
+          hoveredId={hoveredPortId}
+          onSelect={(id) => onPortSelect?.(id)}
+          onHover={setHoveredPortId}
+        />
+      )}
+
+      {/* Layer 6: Compass rose (above everything) */}
       {compassPosition && (
         <CompassRose x={compassPosition.x} y={compassPosition.y} size={60} />
       )}
