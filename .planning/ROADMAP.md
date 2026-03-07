@@ -88,7 +88,7 @@ Plans:
   2. User can export the current map view as a high-resolution PNG image
   3. User can export the current map view as a print-ready PDF document
   4. Exported files preserve nautical styling, route lines, port markers, and labels
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
 - [ ] 05-01-PLAN.md — Export functions (SVG/PNG/PDF) with tests and NauticalMap forwardRef (EXP-01, EXP-02, EXP-03)
@@ -105,4 +105,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. Map Visualization | 2/2 | Complete   | 2026-03-07 |
 | 3. Pathfinding Engine | 1/2 | In progress | - |
 | 4. Route Planning UI | 2/2 | Complete   | 2026-03-07 |
-| 5. Export Pipeline | 0/2 | Not started | - |
+| 5. Export Pipeline | 1/2 | In Progress|  |

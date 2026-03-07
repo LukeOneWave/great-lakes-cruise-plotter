@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Phase 5 context gathered, needs plan+execute
-last_updated: "2026-03-07T15:52:19.547Z"
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-07T16:28:38.940Z"
 last_activity: 2026-03-07 -- Completed 03-02-PLAN (Route visualization layer)
 progress:
   total_phases: 5
   completed_phases: 4
-  total_plans: 9
-  completed_plans: 9
+  total_plans: 11
+  completed_plans: 10
   percent: 100
 ---
 
@@ -56,6 +56,7 @@ Progress: [##########] 100%
 | Phase 03 P02 | 2min | 2 tasks | 5 files |
 | Phase 04 P01 | 3min | 2 tasks | 8 files |
 | Phase 04 P02 | 2min | 3 tasks | 6 files |
+| Phase 05 P01 | 3min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -92,6 +93,8 @@ Recent decisions affecting current work:
 - [Phase 04]: HTML5 native DnD over library for stop reordering -- zero dependencies
 - [Phase 04]: RouteLeg type uses inline import() for Port to avoid circular deps
 - [Phase 04]: Speed state at page level for instant time updates without A* recomputation
+- [Phase 05]: Shared renderToCanvas pipeline reused by PNG and PDF export
+- [Phase 05]: NauticalMap forwardRef exposes SVG element for export access
 
 ### Pending Todos
 
@@ -105,6 +108,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T15:52:19.543Z
-Stopped at: Phase 5 context gathered, needs plan+execute
-Resume file: .planning/phases/05-export-pipeline/05-CONTEXT.md
+Last session: 2026-03-07T16:28:38.937Z
+Stopped at: Completed 05-01-PLAN.md
+Resume file: None

@@ -26,9 +26,9 @@
 
 ### Export
 
-- [ ] **EXP-01**: User can export map as SVG
-- [ ] **EXP-02**: User can export map as high-res PNG
-- [ ] **EXP-03**: User can export map as print-ready PDF (via SVG->Canvas->PNG->PDF pipeline)
+- [x] **EXP-01**: User can export map as SVG
+- [x] **EXP-02**: User can export map as high-res PNG
+- [x] **EXP-03**: User can export map as print-ready PDF (via SVG->Canvas->PNG->PDF pipeline)
 
 ## v2 Requirements
 
@@ -70,9 +70,9 @@
 | VIZ-01 | Phase 2: Map Visualization | Complete |
 | VIZ-02 | Phase 2: Map Visualization | Complete |
 | VIZ-03 | Phase 3: Pathfinding Engine | Complete |
-| EXP-01 | Phase 5: Export Pipeline | Pending |
-| EXP-02 | Phase 5: Export Pipeline | Pending |
-| EXP-03 | Phase 5: Export Pipeline | Pending |
+| EXP-01 | Phase 5: Export Pipeline | Complete |
+| EXP-02 | Phase 5: Export Pipeline | Complete |
+| EXP-03 | Phase 5: Export Pipeline | Complete |
 
 **Coverage:**
 - v1 requirements: 13 total
