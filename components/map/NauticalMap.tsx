@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { forwardRef, useMemo, useState } from "react";
 import { loadCoastlines } from "@/lib/geo/load-geo";
 import { useMapProjection } from "./use-map-projection";
 import { MapDefs } from "./MapDefs";
@@ -25,14 +25,14 @@ interface NauticalMapProps {
 // Load coastline data once (static, never changes)
 const coastlineData = loadCoastlines();
 
-export function NauticalMap({
+export const NauticalMap = forwardRef<SVGSVGElement, NauticalMapProps>(function NauticalMap({
   width = MAP_CONFIG.defaultWidth,
   height = MAP_CONFIG.defaultHeight,
   ports = [],
   selectedPortIds = new Set<string>(),
   onPortSelect,
   routePoints,
-}: NauticalMapProps) {
+}, ref) {
   const { projection, path } = useMapProjection(width, height, coastlineData);
   const [hoveredPortId, setHoveredPortId] = useState<string | null>(null);
 
@@ -49,6 +49,7 @@ export function NauticalMap({
 
   return (
     <svg
+      ref={ref}
       width={width}
       height={height}
       viewBox={`0 0 ${width} ${height}`}
@@ -93,4 +94,4 @@ export function NauticalMap({
       )}
     </svg>
   );
-}
+});
