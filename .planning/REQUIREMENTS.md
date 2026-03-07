@@ -13,7 +13,7 @@
 
 ### Routing
 
-- [ ] **ROUTE-01**: App plots water-only routes using A* pathfinding (never crosses land)
+- [x] **ROUTE-01**: App plots water-only routes using A* pathfinding (never crosses land)
 - [ ] **ROUTE-02**: User can plan multi-stop routes with drag-to-reorder
 - [ ] **ROUTE-03**: User sees trip distance (nautical miles), estimated travel time, and per-leg breakdown
 - [ ] **ROUTE-04**: User can adjust cruise speed (knots) to update travel time estimate
@@ -63,7 +63,7 @@
 | DATA-01 | Phase 1: Data Foundation | Complete |
 | DATA-02 | Phase 1: Data Foundation | Complete |
 | DATA-03 | Phase 1: Data Foundation | Complete |
-| ROUTE-01 | Phase 3: Pathfinding Engine | Pending |
+| ROUTE-01 | Phase 3: Pathfinding Engine | Complete |
 | ROUTE-02 | Phase 4: Route Planning UI | Pending |
 | ROUTE-03 | Phase 4: Route Planning UI | Pending |
 | ROUTE-04 | Phase 4: Route Planning UI | Pending |
@@ -81,4 +81,4 @@
 
 ---
 *Requirements defined: 2026-03-06*
-*Last updated: 2026-03-06 after 01-02-PLAN completion*
+*Last updated: 2026-03-07 after 03-01-PLAN completion*

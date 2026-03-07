@@ -59,10 +59,10 @@ Plans:
   2. Route computes in under 2 seconds for any port pair, including cross-lake routes
   3. Route displays as a dashed line with directional indicators on the map
   4. Routes traverse connecting waterways correctly (e.g., Lake Superior to Lake Huron via St. Marys River)
-**Plans:** 2 plans
+**Plans:** 1/2 plans complete
 
 Plans:
-- [ ] 03-01-PLAN.md — A* pathfinding engine with binary heap, path simplification, and waterway tests (ROUTE-01)
+- [x] 03-01-PLAN.md — A* pathfinding engine with binary heap, path simplification, and waterway tests (ROUTE-01)
 - [ ] 03-02-PLAN.md — RouteLayer SVG component and page wiring for route display (VIZ-03)
 
 ### Phase 4: Route Planning UI
@@ -103,6 +103,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 3/3 | Complete   | 2026-03-07 |
 | 2. Map Visualization | 2/2 | Complete   | 2026-03-07 |
-| 3. Pathfinding Engine | 0/2 | In progress | - |
+| 3. Pathfinding Engine | 1/2 | In progress | - |
 | 4. Route Planning UI | 0/? | Not started | - |
 | 5. Export Pipeline | 0/? | Not started | - |

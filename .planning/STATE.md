@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 3 context gathered
-last_updated: "2026-03-07T15:09:14.380Z"
-last_activity: 2026-03-07 -- Completed 02-02-PLAN (port markers and app page)
+status: in-progress
+stopped_at: Completed 03-01-PLAN (A* pathfinding engine)
+last_updated: "2026-03-07T15:23:59Z"
+last_activity: 2026-03-07 -- Completed 03-01-PLAN (A* pathfinding engine)
 progress:
   total_phases: 5
   completed_phases: 2
-  total_plans: 5
-  completed_plans: 5
+  total_plans: 6
+  completed_plans: 6
   percent: 100
 ---
 
@@ -21,23 +21,23 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-06)
 
 **Core value:** Users can visually plan multi-stop boat routes across the Great Lakes that are guaranteed to stay on water, displayed on a beautiful nautical-style map.
-**Current focus:** Phase 2: Map Visualization
+**Current focus:** Phase 3: Pathfinding Engine
 
 ## Current Position
 
-Phase: 2 of 5 (Map Visualization) -- COMPLETE
-Plan: 2 of 2 in current phase
-Status: Phase 2 Complete
-Last activity: 2026-03-07 -- Completed 02-02-PLAN (port markers and app page)
+Phase: 3 of 5 (Pathfinding Engine)
+Plan: 1 of 1 in current phase -- COMPLETE
+Status: Phase 3 Complete
+Last activity: 2026-03-07 -- Completed 03-01-PLAN (A* pathfinding engine)
 
 Progress: [##########] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: 4.4min
-- Total execution time: 0.37 hours
+- Total plans completed: 6
+- Average duration: 4.3min
+- Total execution time: 0.43 hours
 
 **By Phase:**
 
@@ -45,13 +45,14 @@ Progress: [##########] 100%
 |-------|-------|-------|----------|
 | 1 - Data Foundation | 3 | 16min | 5.3min |
 | 2 - Map Visualization | 2 | 5min | 2.5min |
+| 3 - Pathfinding Engine | 1 | 4min | 4min |
 
 **Recent Trend:**
-- Last 5 plans: 01-02 (7min), 01-03 (5min), 02-01 (3min), 02-02 (2min)
-- Trend: Improving
+- Last 5 plans: 01-03 (5min), 02-01 (3min), 02-02 (2min), 03-01 (4min)
+- Trend: Stable
 
 *Updated after each plan completion*
-| Phase 02 P02 | 2min | 2 tasks | 4 files |
+| Phase 03 P01 | 4min | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,10 @@ Recent decisions affecting current work:
 - [02-01]: Coastline data loaded once at module level (static import) outside React component lifecycle
 - [Phase 02]: PortLayer is pure presentation - selection state managed by parent page
 - [Phase 02]: Hover state lives in NauticalMap, selection state lives in page for route planning
+- [03-01]: Octile distance heuristic over Haversine -- identical optimal paths, standard for grid A*, faster computation
+- [03-01]: Flat integer keys (row * width + col) for Map lookups -- avoids string allocation overhead on large grids
+- [03-01]: Detroit River grid gap confirmed -- A* correctly returns null for Huron-Erie routes, grid data issue
+- [03-01]: Douglas-Peucker epsilon=0.01 degrees (~1km) preserves route shape while removing grid staircase
 
 ### Pending Todos
 
@@ -91,6 +96,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T15:09:14.376Z
-Stopped at: Phase 3 context gathered
-Resume file: .planning/phases/03-pathfinding-engine/03-CONTEXT.md
+Last session: 2026-03-07T15:23:59Z
+Stopped at: Completed 03-01-PLAN (A* pathfinding engine)
+Resume file: .planning/phases/03-pathfinding-engine/03-01-SUMMARY.md
