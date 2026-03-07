@@ -44,7 +44,7 @@ Plans:
   1. Map renders as SVG with nautical chart styling (parchment background, compass rose, decorative depth shading, lat/lng grid)
   2. All curated ports display as markers on the map with labels
   3. Selected ports are visually highlighted and distinguishable from unselected ports
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
 - [ ] 02-01-PLAN.md — Nautical chart SVG core: projection, coastlines, graticule, compass rose, depth shading (VIZ-01)
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 3/3 | Complete   | 2026-03-07 |
-| 2. Map Visualization | 0/2 | Planned | - |
+| 2. Map Visualization | 1/2 | In Progress|  |
 | 3. Pathfinding Engine | 0/? | Not started | - |
 | 4. Route Planning UI | 0/? | Not started | - |
 | 5. Export Pipeline | 0/? | Not started | - |

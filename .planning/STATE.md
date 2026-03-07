@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-07T14:44:24.741Z"
-last_activity: 2026-03-06 -- Completed 01-03-PLAN (validation tests + phase gate)
+status: executing
+stopped_at: Completed 02-01-PLAN (nautical map SVG core)
+last_updated: "2026-03-07T15:01:17Z"
+last_activity: 2026-03-07 -- Completed 02-01-PLAN (nautical map SVG core)
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 3
-  completed_plans: 3
-  percent: 21
+  total_plans: 5
+  completed_plans: 4
+  percent: 29
 ---
 
 # Project State
@@ -21,33 +21,34 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-06)
 
 **Core value:** Users can visually plan multi-stop boat routes across the Great Lakes that are guaranteed to stay on water, displayed on a beautiful nautical-style map.
-**Current focus:** Phase 1: Data Foundation
+**Current focus:** Phase 2: Map Visualization
 
 ## Current Position
 
-Phase: 1 of 5 (Data Foundation) -- COMPLETE
-Plan: 3 of 3 in current phase
-Status: Phase Complete
-Last activity: 2026-03-06 -- Completed 01-03-PLAN (validation tests + phase gate)
+Phase: 2 of 5 (Map Visualization)
+Plan: 1 of 2 in current phase
+Status: Executing
+Last activity: 2026-03-07 -- Completed 02-01-PLAN (nautical map SVG core)
 
-Progress: [##........] 21%
+Progress: [###.......] 29%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 5.3min
-- Total execution time: 0.27 hours
+- Total plans completed: 4
+- Average duration: 4.8min
+- Total execution time: 0.32 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 - Data Foundation | 3 | 16min | 5.3min |
+| 2 - Map Visualization | 1 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (4min), 01-02 (7min), 01-03 (5min)
-- Trend: Steady
+- Last 5 plans: 01-01 (4min), 01-02 (7min), 01-03 (5min), 02-01 (3min)
+- Trend: Improving
 
 *Updated after each plan completion*
 
@@ -70,6 +71,10 @@ Recent decisions affecting current work:
 - [01-03]: Port snap threshold 80% at 0.02-deg grid is normal -- findNearestWaterCell handles snapping
 - [01-03]: Detroit River corridor has grid gap at St. Clair-Huron boundary -- individual cells are water but not fully connected via BFS
 - [01-03]: Corridor override polygons cover Detroit waterfront -- land spot-checks must use truly inland points
+- [02-01]: SVG layer order: water background rect -> defs -> graticule -> coastlines -> compass rose (water IS background)
+- [02-01]: d3-geo used for math only (projection, geoPath, geoGraticule) -- all DOM rendering via React JSX
+- [02-01]: Compass rose positioned at Lake Superior center [-87.5, 47.5] for open water placement
+- [02-01]: Coastline data loaded once at module level (static import) outside React component lifecycle
 
 ### Pending Todos
 
@@ -83,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T14:44:24.734Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-map-visualization/02-CONTEXT.md
+Last session: 2026-03-07T15:01:17Z
+Stopped at: Completed 02-01-PLAN (nautical map SVG core)
+Resume file: .planning/phases/02-map-visualization/02-01-SUMMARY.md
