@@ -1,0 +1,28 @@
+export const NAUTICAL_COLORS = {
+  parchment: "#f5e6c8",
+  parchmentDark: "#e8d5b0",
+  land: "#f0ddb8",
+  landStroke: "#5c4a32",
+  waterLight: "#d4e6f0",
+  waterMid: "#c5dbe8",
+  waterDeep: "#a8c8e0",
+  gridLine: "#8b7355",
+  compassDark: "#3d2b1f",
+  compassLight: "#b8a080",
+  portDefault: "#5c4a32",
+  portSelected: "#c0392b",
+  portHover: "#d4a017",
+  portLabel: "#3d2b1f",
+  labelSerif: "Georgia, 'Times New Roman', serif",
+  labelSans: "'Geist', sans-serif",
+} as const;
+
+export const MAP_CONFIG = {
+  defaultWidth: 960,
+  defaultHeight: 600,
+  padding: 20,
+  projectionParallels: [42, 48] as [number, number],
+  projectionRotate: [84, 0] as [number, number],
+  graticuleExtent: [[-93, 41], [-75, 50]] as const,
+  graticuleStep: [2, 2] as [number, number],
+} as const;
