@@ -14,6 +14,7 @@ export default function Home() {
   const ports = useMemo(() => getAllPorts(), []);
   const grid = useMemo(() => loadGrid(), []);
   const [stops, setStops] = useState<string[]>([]);
+  const [speedKnots, setSpeedKnots] = useState(10);
 
   const stopPorts = useMemo(
     () =>
@@ -91,8 +92,8 @@ export default function Home() {
           <RoutePlannerPanel
             stops={stopPorts}
             routeLegs={routeLegs}
-            speedKnots={10}
-            onSpeedChange={() => {}}
+            speedKnots={speedKnots}
+            onSpeedChange={setSpeedKnots}
             onReorder={reorderStops}
             onRemove={removeStop}
           />

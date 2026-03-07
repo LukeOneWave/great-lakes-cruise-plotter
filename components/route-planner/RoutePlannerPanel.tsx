@@ -1,6 +1,8 @@
 "use client";
 
 import { StopList } from "./StopList";
+import { SpeedControl } from "./SpeedControl";
+import { TripSummary } from "./TripSummary";
 import type { Port } from "@/lib/ports/types";
 import type { RouteLeg } from "@/lib/pathfinding/types";
 
@@ -27,8 +29,10 @@ export function RoutePlannerPanel({
         Route Planner
       </h2>
       <StopList stops={stops} onReorder={onReorder} onRemove={onRemove} />
-      {/* TripSummary placeholder (Plan 02) */}
-      {/* SpeedControl placeholder (Plan 02) */}
+      <SpeedControl speedKnots={speedKnots} onSpeedChange={onSpeedChange} />
+      {routeLegs.length > 0 && (
+        <TripSummary routeLegs={routeLegs} speedKnots={speedKnots} />
+      )}
     </div>
   );
 }
