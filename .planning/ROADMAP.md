@@ -12,7 +12,7 @@ This roadmap delivers a client-side web application for plotting water-only crui
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Data Foundation** - Process coastline data, generate navigation grid, curate port database
+- [x] **Phase 1: Data Foundation** - Process coastline data, generate navigation grid, curate port database (completed 2026-03-07)
 - [ ] **Phase 2: Map Visualization** - Render nautical chart SVG with coastlines, port markers, and styling
 - [ ] **Phase 3: Pathfinding Engine** - Water-only A* routing with route display on map
 - [ ] **Phase 4: Route Planning UI** - Multi-stop trip builder with distance, time, and speed controls
@@ -29,7 +29,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Connecting waterways (St. Marys River, Straits of Mackinac, Detroit/St. Clair River, Welland Canal, upper St. Lawrence) are present and navigable in the grid
   3. User can search a curated port list and see ~80-100 Great Lakes ports with accurate coordinates
   4. TopoJSON coastline data is under 500KB and navigation grid loads in under 1 second
-**Plans:** 3 plans
+**Plans:** 3/3 plans complete
 
 Plans:
 - [x] 01-01-PLAN.md — Types, dependencies, and curated port database (DATA-03)
@@ -101,7 +101,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 2/3 | In progress | - |
+| 1. Data Foundation | 3/3 | Complete   | 2026-03-07 |
 | 2. Map Visualization | 0/? | Not started | - |
 | 3. Pathfinding Engine | 0/? | Not started | - |
 | 4. Route Planning UI | 0/? | Not started | - |

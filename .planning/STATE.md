@@ -9,29 +9,29 @@ See: .planning/PROJECT.md (updated 2026-03-06)
 
 ## Current Position
 
-Phase: 1 of 5 (Data Foundation)
-Plan: 2 of 3 in current phase
-Status: Executing
-Last activity: 2026-03-06 -- Completed 01-02-PLAN (geo pipeline + navigation grid)
+Phase: 1 of 5 (Data Foundation) -- COMPLETE
+Plan: 3 of 3 in current phase
+Status: Phase Complete
+Last activity: 2026-03-06 -- Completed 01-03-PLAN (validation tests + phase gate)
 
-Progress: [##........] 14%
+Progress: [##........] 21%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 5.5min
-- Total execution time: 0.18 hours
+- Total plans completed: 3
+- Average duration: 5.3min
+- Total execution time: 0.27 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 1 - Data Foundation | 2 | 11min | 5.5min |
+| 1 - Data Foundation | 3 | 16min | 5.3min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (4min), 01-02 (7min)
-- Trend: Ramping up
+- Last 5 plans: 01-01 (4min), 01-02 (7min), 01-03 (5min)
+- Trend: Steady
 
 *Updated after each plan completion*
 
@@ -51,6 +51,9 @@ Recent decisions affecting current work:
 - [01-02]: Corridor polygons use CW winding for d3-geo spherical containment (opposite of GeoJSON spec)
 - [01-02]: Grid script loads raw corridor JSON alongside TopoJSON to prevent simplification distortion
 - [01-02]: Natural Earth uses "Lake Saint Clair" spelling -- match both forms
+- [01-03]: Port snap threshold 80% at 0.02-deg grid is normal -- findNearestWaterCell handles snapping
+- [01-03]: Detroit River corridor has grid gap at St. Clair-Huron boundary -- individual cells are water but not fully connected via BFS
+- [01-03]: Corridor override polygons cover Detroit waterfront -- land spot-checks must use truly inland points
 
 ### Pending Todos
 
@@ -65,5 +68,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-06
-Stopped at: Completed 01-02-PLAN.md
+Stopped at: Completed 01-03-PLAN.md -- Phase 1 Data Foundation COMPLETE
 Resume file: None
