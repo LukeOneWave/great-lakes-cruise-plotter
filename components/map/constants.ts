@@ -13,6 +13,8 @@ export const NAUTICAL_COLORS = {
   portSelected: "#c0392b",
   portHover: "#d4a017",
   portLabel: "#3d2b1f",
+  routeLine: "#1a3a5c",
+  routeArrow: "#1a3a5c",
   labelSerif: "Georgia, 'Times New Roman', serif",
   labelSans: "'Geist', sans-serif",
 } as const;
