@@ -9,7 +9,7 @@
 
 - [ ] **DATA-01**: User sees high-detail Great Lakes coastlines for all 5 lakes with major islands (via TopoJSON)
 - [ ] **DATA-02**: User can route through connecting waterways (St. Marys River, Straits of Mackinac, Detroit/St. Clair River, Welland Canal, upper St. Lawrence)
-- [ ] **DATA-03**: User can search and select from ~80-100 curated Great Lakes ports
+- [x] **DATA-03**: User can search and select from ~80-100 curated Great Lakes ports
 
 ### Routing
 
@@ -62,7 +62,7 @@
 |-------------|-------|--------|
 | DATA-01 | Phase 1: Data Foundation | Pending |
 | DATA-02 | Phase 1: Data Foundation | Pending |
-| DATA-03 | Phase 1: Data Foundation | Pending |
+| DATA-03 | Phase 1: Data Foundation | Complete |
 | ROUTE-01 | Phase 3: Pathfinding Engine | Pending |
 | ROUTE-02 | Phase 4: Route Planning UI | Pending |
 | ROUTE-03 | Phase 4: Route Planning UI | Pending |
