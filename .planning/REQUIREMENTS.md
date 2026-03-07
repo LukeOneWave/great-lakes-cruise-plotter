@@ -16,7 +16,7 @@
 - [x] **ROUTE-01**: App plots water-only routes using A* pathfinding (never crosses land)
 - [x] **ROUTE-02**: User can plan multi-stop routes with drag-to-reorder
 - [x] **ROUTE-03**: User sees trip distance (nautical miles), estimated travel time, and per-leg breakdown
-- [ ] **ROUTE-04**: User can adjust cruise speed (knots) to update travel time estimate
+- [x] **ROUTE-04**: User can adjust cruise speed (knots) to update travel time estimate
 
 ### Visualization
 
@@ -66,7 +66,7 @@
 | ROUTE-01 | Phase 3: Pathfinding Engine | Complete |
 | ROUTE-02 | Phase 4: Route Planning UI | Complete |
 | ROUTE-03 | Phase 4: Route Planning UI | Complete |
-| ROUTE-04 | Phase 4: Route Planning UI | Pending |
+| ROUTE-04 | Phase 4: Route Planning UI | Complete |
 | VIZ-01 | Phase 2: Map Visualization | Complete |
 | VIZ-02 | Phase 2: Map Visualization | Complete |
 | VIZ-03 | Phase 3: Pathfinding Engine | Complete |

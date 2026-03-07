@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Data Foundation** - Process coastline data, generate navigation grid, curate port database (completed 2026-03-07)
 - [x] **Phase 2: Map Visualization** - Render nautical chart SVG with coastlines, port markers, and styling (completed 2026-03-07)
 - [ ] **Phase 3: Pathfinding Engine** - Water-only A* routing with route display on map
-- [ ] **Phase 4: Route Planning UI** - Multi-stop trip builder with distance, time, and speed controls
+- [x] **Phase 4: Route Planning UI** - Multi-stop trip builder with distance, time, and speed controls (completed 2026-03-07)
 - [ ] **Phase 5: Export Pipeline** - SVG, PNG, and PDF export of completed maps
 
 ## Phase Details
@@ -73,7 +73,7 @@ Plans:
   1. User can add multiple stops and reorder them via drag-and-drop
   2. Trip summary shows total distance in nautical miles, estimated travel time, and per-leg breakdown
   3. User can adjust cruise speed in knots and travel time estimates update immediately
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] 04-01-PLAN.md — Multi-stop route builder with ordered stops, drag-to-reorder, distance utils, and side panel layout (ROUTE-02, ROUTE-03)
@@ -104,5 +104,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Data Foundation | 3/3 | Complete   | 2026-03-07 |
 | 2. Map Visualization | 2/2 | Complete   | 2026-03-07 |
 | 3. Pathfinding Engine | 1/2 | In progress | - |
-| 4. Route Planning UI | 0/2 | Not started | - |
+| 4. Route Planning UI | 2/2 | Complete   | 2026-03-07 |
 | 5. Export Pipeline | 0/? | Not started | - |
