@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "prepare-geo": "npx tsx scripts/prepare-geo.ts",
     "generate-grid": "npx tsx scripts/generate-grid.ts",
-    "prepare-data": "npm run prepare-geo && npm run generate-grid"
+    "prepare-data": "npm run prepare-geo && npm run generate-grid",
+    "validate-data": "npx tsx scripts/validate-data.ts"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
