@@ -1,0 +1,872 @@
+[
+  {
+    "id": "duluth-mn",
+    "name": "Duluth, MN",
+    "lat": 46.7784,
+    "lng": -92.0943,
+    "lake": "Superior",
+    "type": "city",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "id": "thunder-bay-on",
+    "name": "Thunder Bay, ON",
+    "lat": 48.3822,
+    "lng": -89.2462,
+    "lake": "Superior",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "marquette-mi",
+    "name": "Marquette, MI",
+    "lat": 46.5475,
+    "lng": -87.3954,
+    "lake": "Superior",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "sault-ste-marie-mi",
+    "name": "Sault Ste. Marie, MI",
+    "lat": 46.4953,
+    "lng": -84.3453,
+    "lake": "Superior",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "ashland-wi",
+    "name": "Ashland, WI",
+    "lat": 46.5927,
+    "lng": -90.8838,
+    "lake": "Superior",
+    "type": "city",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "id": "houghton-mi",
+    "name": "Houghton, MI",
+    "lat": 47.1211,
+    "lng": -88.5694,
+    "lake": "Superior",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "silver-bay-mn",
+    "name": "Silver Bay, MN",
+    "lat": 47.2947,
+    "lng": -91.2572,
+    "lake": "Superior",
+    "type": "city",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "id": "grand-marais-mn",
+    "name": "Grand Marais, MN",
+    "lat": 47.7509,
+    "lng": -90.3343,
+    "lake": "Superior",
+    "type": "marina",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "id": "bayfield-wi",
+    "name": "Bayfield, WI",
+    "lat": 46.8127,
+    "lng": -90.8201,
+    "lake": "Superior",
+    "type": "marina",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "id": "copper-harbor-mi",
+    "name": "Copper Harbor, MI",
+    "lat": 47.4686,
+    "lng": -87.8884,
+    "lake": "Superior",
+    "type": "marina",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "michipicoten-on",
+    "name": "Michipicoten, ON",
+    "lat": 47.9344,
+    "lng": -84.8508,
+    "lake": "Superior",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "marathon-on",
+    "name": "Marathon, ON",
+    "lat": 48.7544,
+    "lng": -86.3686,
+    "lake": "Superior",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "nipigon-on",
+    "name": "Nipigon, ON",
+    "lat": 49.0158,
+    "lng": -88.2681,
+    "lake": "Superior",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "chicago-il",
+    "name": "Chicago, IL",
+    "lat": 41.8869,
+    "lng": -87.6125,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "id": "milwaukee-wi",
+    "name": "Milwaukee, WI",
+    "lat": 43.0289,
+    "lng": -87.8960,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "id": "green-bay-wi",
+    "name": "Green Bay, WI",
+    "lat": 44.5310,
+    "lng": -87.9901,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "id": "traverse-city-mi",
+    "name": "Traverse City, MI",
+    "lat": 44.7631,
+    "lng": -85.6206,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "mackinac-island-mi",
+    "name": "Mackinac Island, MI",
+    "lat": 45.8492,
+    "lng": -84.6189,
+    "lake": "Michigan",
+    "type": "island",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "ludington-mi",
+    "name": "Ludington, MI",
+    "lat": 43.9553,
+    "lng": -86.4525,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "muskegon-mi",
+    "name": "Muskegon, MI",
+    "lat": 43.2289,
+    "lng": -86.2562,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "holland-mi",
+    "name": "Holland, MI",
+    "lat": 42.7736,
+    "lng": -86.2139,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "st-joseph-mi",
+    "name": "St. Joseph, MI",
+    "lat": 42.1042,
+    "lng": -86.4901,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "gary-in",
+    "name": "Gary, IN",
+    "lat": 41.6103,
+    "lng": -87.3362,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "id": "michigan-city-in",
+    "name": "Michigan City, IN",
+    "lat": 41.7228,
+    "lng": -86.9067,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "id": "manitowoc-wi",
+    "name": "Manitowoc, WI",
+    "lat": 44.0886,
+    "lng": -87.6573,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "id": "sturgeon-bay-wi",
+    "name": "Sturgeon Bay, WI",
+    "lat": 44.8342,
+    "lng": -87.3770,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "id": "petoskey-mi",
+    "name": "Petoskey, MI",
+    "lat": 45.3736,
+    "lng": -84.9553,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "charlevoix-mi",
+    "name": "Charlevoix, MI",
+    "lat": 45.3178,
+    "lng": -85.2586,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "manistee-mi",
+    "name": "Manistee, MI",
+    "lat": 44.2447,
+    "lng": -86.3253,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "frankfort-mi",
+    "name": "Frankfort, MI",
+    "lat": 44.6342,
+    "lng": -86.2342,
+    "lake": "Michigan",
+    "type": "marina",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "alpena-mi",
+    "name": "Alpena, MI",
+    "lat": 45.0617,
+    "lng": -83.4277,
+    "lake": "Huron",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "rogers-city-mi",
+    "name": "Rogers City, MI",
+    "lat": 45.4214,
+    "lng": -83.8133,
+    "lake": "Huron",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "cheboygan-mi",
+    "name": "Cheboygan, MI",
+    "lat": 45.6469,
+    "lng": -84.4744,
+    "lake": "Huron",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "tobermory-on",
+    "name": "Tobermory, ON",
+    "lat": 45.2536,
+    "lng": -81.6644,
+    "lake": "Huron",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "mackinaw-city-mi",
+    "name": "Mackinaw City, MI",
+    "lat": 45.7836,
+    "lng": -84.7278,
+    "lake": "Huron",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "bay-city-mi",
+    "name": "Bay City, MI",
+    "lat": 43.5944,
+    "lng": -83.8886,
+    "lake": "Huron",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "port-huron-mi",
+    "name": "Port Huron, MI",
+    "lat": 42.9742,
+    "lng": -82.4249,
+    "lake": "Huron",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "sarnia-on",
+    "name": "Sarnia, ON",
+    "lat": 42.9745,
+    "lng": -82.4066,
+    "lake": "Huron",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "goderich-on",
+    "name": "Goderich, ON",
+    "lat": 43.7489,
+    "lng": -81.7148,
+    "lake": "Huron",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "kincardine-on",
+    "name": "Kincardine, ON",
+    "lat": 44.1764,
+    "lng": -81.6367,
+    "lake": "Huron",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "owen-sound-on",
+    "name": "Owen Sound, ON",
+    "lat": 44.5690,
+    "lng": -80.9431,
+    "lake": "Huron",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "midland-on",
+    "name": "Midland, ON",
+    "lat": 44.7494,
+    "lng": -79.8831,
+    "lake": "Huron",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "parry-sound-on",
+    "name": "Parry Sound, ON",
+    "lat": 45.3433,
+    "lng": -80.0364,
+    "lake": "Huron",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "cleveland-oh",
+    "name": "Cleveland, OH",
+    "lat": 41.5085,
+    "lng": -81.6954,
+    "lake": "Erie",
+    "type": "city",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "toledo-oh",
+    "name": "Toledo, OH",
+    "lat": 41.6640,
+    "lng": -83.5552,
+    "lake": "Erie",
+    "type": "city",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "erie-pa",
+    "name": "Erie, PA",
+    "lat": 42.1292,
+    "lng": -80.0851,
+    "lake": "Erie",
+    "type": "city",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "id": "buffalo-ny",
+    "name": "Buffalo, NY",
+    "lat": 42.8776,
+    "lng": -78.8799,
+    "lake": "Erie",
+    "type": "city",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": "sandusky-oh",
+    "name": "Sandusky, OH",
+    "lat": 41.4489,
+    "lng": -82.7079,
+    "lake": "Erie",
+    "type": "city",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "ashtabula-oh",
+    "name": "Ashtabula, OH",
+    "lat": 41.8977,
+    "lng": -80.7898,
+    "lake": "Erie",
+    "type": "city",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "port-clinton-oh",
+    "name": "Port Clinton, OH",
+    "lat": 41.5120,
+    "lng": -82.9377,
+    "lake": "Erie",
+    "type": "city",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "lorain-oh",
+    "name": "Lorain, OH",
+    "lat": 41.4648,
+    "lng": -82.1824,
+    "lake": "Erie",
+    "type": "city",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "fairport-harbor-oh",
+    "name": "Fairport Harbor, OH",
+    "lat": 41.7506,
+    "lng": -81.2787,
+    "lake": "Erie",
+    "type": "marina",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "conneaut-oh",
+    "name": "Conneaut, OH",
+    "lat": 41.9617,
+    "lng": -80.5548,
+    "lake": "Erie",
+    "type": "city",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "port-stanley-on",
+    "name": "Port Stanley, ON",
+    "lat": 42.6614,
+    "lng": -81.2134,
+    "lake": "Erie",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "port-dover-on",
+    "name": "Port Dover, ON",
+    "lat": 42.7864,
+    "lng": -80.2036,
+    "lake": "Erie",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "port-colborne-on",
+    "name": "Port Colborne, ON",
+    "lat": 42.8863,
+    "lng": -79.2519,
+    "lake": "Erie",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "long-point-on",
+    "name": "Long Point, ON",
+    "lat": 42.5822,
+    "lng": -80.3489,
+    "lake": "Erie",
+    "type": "landmark",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "toronto-on",
+    "name": "Toronto, ON",
+    "lat": 43.6387,
+    "lng": -79.3816,
+    "lake": "Ontario",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "rochester-ny",
+    "name": "Rochester, NY",
+    "lat": 43.2624,
+    "lng": -77.6156,
+    "lake": "Ontario",
+    "type": "city",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": "oswego-ny",
+    "name": "Oswego, NY",
+    "lat": 43.4553,
+    "lng": -76.5105,
+    "lake": "Ontario",
+    "type": "city",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": "kingston-on",
+    "name": "Kingston, ON",
+    "lat": 44.2312,
+    "lng": -76.4860,
+    "lake": "Ontario",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "hamilton-on",
+    "name": "Hamilton, ON",
+    "lat": 43.2682,
+    "lng": -79.8711,
+    "lake": "Ontario",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "cobourg-on",
+    "name": "Cobourg, ON",
+    "lat": 43.9588,
+    "lng": -78.1680,
+    "lake": "Ontario",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "port-hope-on",
+    "name": "Port Hope, ON",
+    "lat": 43.9467,
+    "lng": -78.2905,
+    "lake": "Ontario",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "sackets-harbor-ny",
+    "name": "Sackets Harbor, NY",
+    "lat": 43.9467,
+    "lng": -76.1189,
+    "lake": "Ontario",
+    "type": "landmark",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": "cape-vincent-ny",
+    "name": "Cape Vincent, NY",
+    "lat": 44.1278,
+    "lng": -76.3317,
+    "lake": "Ontario",
+    "type": "marina",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": "niagara-on-the-lake-on",
+    "name": "Niagara-on-the-Lake, ON",
+    "lat": 43.2553,
+    "lng": -79.0714,
+    "lake": "Ontario",
+    "type": "landmark",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "picton-on",
+    "name": "Picton, ON",
+    "lat": 43.9989,
+    "lng": -77.1381,
+    "lake": "Ontario",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "belleville-on",
+    "name": "Belleville, ON",
+    "lat": 44.1628,
+    "lng": -77.3832,
+    "lake": "Ontario",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "brockville-on",
+    "name": "Brockville, ON",
+    "lat": 44.5895,
+    "lng": -75.6843,
+    "lake": "Ontario",
+    "type": "city",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "st-clair-shores-mi",
+    "name": "St. Clair Shores, MI",
+    "lat": 42.4970,
+    "lng": -82.8887,
+    "lake": "St. Clair",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "mount-clemens-mi",
+    "name": "Mount Clemens, MI",
+    "lat": 42.5972,
+    "lng": -82.8780,
+    "lake": "St. Clair",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "belle-river-on",
+    "name": "Belle River, ON",
+    "lat": 42.2892,
+    "lng": -82.7093,
+    "lake": "St. Clair",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "mitchells-bay-on",
+    "name": "Mitchell's Bay, ON",
+    "lat": 42.4667,
+    "lng": -82.4167,
+    "lake": "St. Clair",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "two-harbors-mn",
+    "name": "Two Harbors, MN",
+    "lat": 47.0236,
+    "lng": -91.6705,
+    "lake": "Superior",
+    "type": "city",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "id": "munising-mi",
+    "name": "Munising, MI",
+    "lat": 46.4111,
+    "lng": -86.6462,
+    "lake": "Superior",
+    "type": "city",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "keweenaw-mi",
+    "name": "Keweenaw Waterway, MI",
+    "lat": 47.1667,
+    "lng": -88.4442,
+    "lake": "Superior",
+    "type": "marina",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "waukegan-il",
+    "name": "Waukegan, IL",
+    "lat": 42.3697,
+    "lng": -87.8253,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "id": "sheboygan-wi",
+    "name": "Sheboygan, WI",
+    "lat": 43.7508,
+    "lng": -87.7145,
+    "lake": "Michigan",
+    "type": "city",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "id": "saugatuck-mi",
+    "name": "Saugatuck, MI",
+    "lat": 42.6556,
+    "lng": -86.2017,
+    "lake": "Michigan",
+    "type": "marina",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "harrisville-mi",
+    "name": "Harrisville, MI",
+    "lat": 44.6564,
+    "lng": -83.2947,
+    "lake": "Huron",
+    "type": "marina",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "id": "southampton-on",
+    "name": "Southampton, ON",
+    "lat": 44.5003,
+    "lng": -81.3720,
+    "lake": "Huron",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "dunkirk-ny",
+    "name": "Dunkirk, NY",
+    "lat": 42.4834,
+    "lng": -79.3340,
+    "lake": "Erie",
+    "type": "city",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": "vermilion-oh",
+    "name": "Vermilion, OH",
+    "lat": 41.4220,
+    "lng": -82.3646,
+    "lake": "Erie",
+    "type": "marina",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "id": "sodus-point-ny",
+    "name": "Sodus Point, NY",
+    "lat": 43.2678,
+    "lng": -76.9908,
+    "lake": "Ontario",
+    "type": "marina",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": "whitby-on",
+    "name": "Whitby, ON",
+    "lat": 43.8735,
+    "lng": -78.9423,
+    "lake": "Ontario",
+    "type": "marina",
+    "state": "ON",
+    "country": "CA"
+  },
+  {
+    "id": "new-baltimore-mi",
+    "name": "New Baltimore, MI",
+    "lat": 42.6811,
+    "lng": -82.7360,
+    "lake": "St. Clair",
+    "type": "marina",
+    "state": "MI",
+    "country": "US"
+  }
+]
