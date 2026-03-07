@@ -1,0 +1,119 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Marys River",
+        "type": "river"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-84.60, 46.25],
+            [-84.20, 46.25],
+            [-84.20, 46.55],
+            [-84.60, 46.55],
+            [-84.60, 46.25]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Straits of Mackinac",
+        "type": "strait"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-85.05, 45.70],
+            [-84.55, 45.70],
+            [-84.55, 45.90],
+            [-85.05, 45.90],
+            [-85.05, 45.70]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Clair River",
+        "type": "river"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-82.60, 42.90],
+            [-82.35, 42.90],
+            [-82.35, 43.05],
+            [-82.60, 43.05],
+            [-82.60, 42.90]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Detroit River",
+        "type": "river"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-83.20, 42.20],
+            [-82.90, 42.20],
+            [-82.90, 42.40],
+            [-83.20, 42.40],
+            [-83.20, 42.20]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Welland Canal",
+        "type": "canal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-79.28, 42.85],
+            [-79.17, 42.85],
+            [-79.17, 43.25],
+            [-79.28, 43.25],
+            [-79.28, 42.85]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Upper St. Lawrence River",
+        "type": "river"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-76.60, 44.05],
+            [-75.40, 44.05],
+            [-75.40, 44.75],
+            [-76.60, 44.75],
+            [-76.60, 44.05]
+          ]
+        ]
+      }
+    }
+  ]
+}
