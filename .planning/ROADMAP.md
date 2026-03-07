@@ -13,7 +13,7 @@ This roadmap delivers a client-side web application for plotting water-only crui
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Data Foundation** - Process coastline data, generate navigation grid, curate port database (completed 2026-03-07)
-- [ ] **Phase 2: Map Visualization** - Render nautical chart SVG with coastlines, port markers, and styling
+- [x] **Phase 2: Map Visualization** - Render nautical chart SVG with coastlines, port markers, and styling (completed 2026-03-07)
 - [ ] **Phase 3: Pathfinding Engine** - Water-only A* routing with route display on map
 - [ ] **Phase 4: Route Planning UI** - Multi-stop trip builder with distance, time, and speed controls
 - [ ] **Phase 5: Export Pipeline** - SVG, PNG, and PDF export of completed maps
@@ -44,7 +44,7 @@ Plans:
   1. Map renders as SVG with nautical chart styling (parchment background, compass rose, decorative depth shading, lat/lng grid)
   2. All curated ports display as markers on the map with labels
   3. Selected ports are visually highlighted and distinguishable from unselected ports
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] 02-01-PLAN.md — Nautical chart SVG core: projection, coastlines, graticule, compass rose, depth shading (VIZ-01)
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 3/3 | Complete   | 2026-03-07 |
-| 2. Map Visualization | 1/2 | In Progress|  |
+| 2. Map Visualization | 2/2 | Complete   | 2026-03-07 |
 | 3. Pathfinding Engine | 0/? | Not started | - |
 | 4. Route Planning UI | 0/? | Not started | - |
 | 5. Export Pipeline | 0/? | Not started | - |
