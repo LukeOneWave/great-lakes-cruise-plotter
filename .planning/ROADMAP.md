@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Types, dependencies, and curated port database (DATA-03)
-- [ ] 01-02-PLAN.md — Geo processing pipeline and navigation grid generation (DATA-01, DATA-02)
+- [x] 01-02-PLAN.md — Geo processing pipeline and navigation grid generation (DATA-01, DATA-02)
 - [ ] 01-03-PLAN.md — Validation tests and integration verification (DATA-01, DATA-02, DATA-03)
 
 ### Phase 2: Map Visualization
@@ -101,7 +101,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 1/3 | In progress | - |
+| 1. Data Foundation | 2/3 | In progress | - |
 | 2. Map Visualization | 0/? | Not started | - |
 | 3. Pathfinding Engine | 0/? | Not started | - |
 | 4. Route Planning UI | 0/? | Not started | - |
