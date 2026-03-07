@@ -47,8 +47,8 @@ Plans:
 **Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 02-01-PLAN.md — Nautical chart SVG core: projection, coastlines, graticule, compass rose, depth shading (VIZ-01)
-- [ ] 02-02-PLAN.md — Port markers with hover/selection and app page wiring (VIZ-02)
+- [x] 02-01-PLAN.md — Nautical chart SVG core: projection, coastlines, graticule, compass rose, depth shading (VIZ-01)
+- [x] 02-02-PLAN.md — Port markers with hover/selection and app page wiring (VIZ-02)
 
 ### Phase 3: Pathfinding Engine
 **Goal**: The app can compute and display water-only routes between any two ports on the Great Lakes
@@ -59,11 +59,11 @@ Plans:
   2. Route computes in under 2 seconds for any port pair, including cross-lake routes
   3. Route displays as a dashed line with directional indicators on the map
   4. Routes traverse connecting waterways correctly (e.g., Lake Superior to Lake Huron via St. Marys River)
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md — A* pathfinding engine with binary heap, path simplification, and waterway tests (ROUTE-01)
+- [ ] 03-02-PLAN.md — RouteLayer SVG component and page wiring for route display (VIZ-03)
 
 ### Phase 4: Route Planning UI
 **Goal**: Users can plan complete multi-stop cruise itineraries with full trip details
@@ -103,6 +103,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 3/3 | Complete   | 2026-03-07 |
 | 2. Map Visualization | 2/2 | Complete   | 2026-03-07 |
-| 3. Pathfinding Engine | 0/? | Not started | - |
+| 3. Pathfinding Engine | 0/2 | In progress | - |
 | 4. Route Planning UI | 0/? | Not started | - |
 | 5. Export Pipeline | 0/? | Not started | - |
