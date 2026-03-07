@@ -22,7 +22,7 @@
 
 - [x] **VIZ-01**: Map rendered as nautical chart SVG (parchment background, compass rose, depth shading, lat/lng grid)
 - [x] **VIZ-02**: All ports displayed as markers; selected ports highlighted with labels
-- [ ] **VIZ-03**: Route drawn as dashed line with directional indicators
+- [x] **VIZ-03**: Route drawn as dashed line with directional indicators
 
 ### Export
 
@@ -69,7 +69,7 @@
 | ROUTE-04 | Phase 4: Route Planning UI | Pending |
 | VIZ-01 | Phase 2: Map Visualization | Complete |
 | VIZ-02 | Phase 2: Map Visualization | Complete |
-| VIZ-03 | Phase 3: Pathfinding Engine | Pending |
+| VIZ-03 | Phase 3: Pathfinding Engine | Complete |
 | EXP-01 | Phase 5: Export Pipeline | Pending |
 | EXP-02 | Phase 5: Export Pipeline | Pending |
 | EXP-03 | Phase 5: Export Pipeline | Pending |
