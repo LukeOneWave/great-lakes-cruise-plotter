@@ -60,25 +60,25 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | TBD | Pending |
-| DATA-02 | TBD | Pending |
-| DATA-03 | TBD | Pending |
-| ROUTE-01 | TBD | Pending |
-| ROUTE-02 | TBD | Pending |
-| ROUTE-03 | TBD | Pending |
-| ROUTE-04 | TBD | Pending |
-| VIZ-01 | TBD | Pending |
-| VIZ-02 | TBD | Pending |
-| VIZ-03 | TBD | Pending |
-| EXP-01 | TBD | Pending |
-| EXP-02 | TBD | Pending |
-| EXP-03 | TBD | Pending |
+| DATA-01 | Phase 1: Data Foundation | Pending |
+| DATA-02 | Phase 1: Data Foundation | Pending |
+| DATA-03 | Phase 1: Data Foundation | Pending |
+| ROUTE-01 | Phase 3: Pathfinding Engine | Pending |
+| ROUTE-02 | Phase 4: Route Planning UI | Pending |
+| ROUTE-03 | Phase 4: Route Planning UI | Pending |
+| ROUTE-04 | Phase 4: Route Planning UI | Pending |
+| VIZ-01 | Phase 2: Map Visualization | Pending |
+| VIZ-02 | Phase 2: Map Visualization | Pending |
+| VIZ-03 | Phase 3: Pathfinding Engine | Pending |
+| EXP-01 | Phase 5: Export Pipeline | Pending |
+| EXP-02 | Phase 5: Export Pipeline | Pending |
+| EXP-03 | Phase 5: Export Pipeline | Pending |
 
 **Coverage:**
 - v1 requirements: 13 total
-- Mapped to phases: 0
-- Unmapped: 13
+- Mapped to phases: 13
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-06*
-*Last updated: 2026-03-06 after initial definition*
+*Last updated: 2026-03-06 after roadmap creation*
