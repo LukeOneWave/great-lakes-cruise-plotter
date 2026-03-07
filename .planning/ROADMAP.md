@@ -73,11 +73,11 @@ Plans:
   1. User can add multiple stops and reorder them via drag-and-drop
   2. Trip summary shows total distance in nautical miles, estimated travel time, and per-leg breakdown
   3. User can adjust cruise speed in knots and travel time estimates update immediately
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md — Multi-stop route builder with ordered stops, drag-to-reorder, distance utils, and side panel layout (ROUTE-02, ROUTE-03)
+- [ ] 04-02-PLAN.md — Trip summary display, speed control slider, and full panel wiring with human verification (ROUTE-03, ROUTE-04)
 
 ### Phase 5: Export Pipeline
 **Goal**: Users can save their completed cruise maps in multiple formats
@@ -104,5 +104,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Data Foundation | 3/3 | Complete   | 2026-03-07 |
 | 2. Map Visualization | 2/2 | Complete   | 2026-03-07 |
 | 3. Pathfinding Engine | 1/2 | In progress | - |
-| 4. Route Planning UI | 0/? | Not started | - |
+| 4. Route Planning UI | 0/2 | Not started | - |
 | 5. Export Pipeline | 0/? | Not started | - |
