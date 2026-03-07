@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 05-01-PLAN.md
-last_updated: "2026-03-07T16:28:38.940Z"
+stopped_at: Completed 05-02-PLAN.md
+last_updated: "2026-03-07T16:54:39.656Z"
 last_activity: 2026-03-07 -- Completed 03-02-PLAN (Route visualization layer)
 progress:
   total_phases: 5
-  completed_phases: 4
+  completed_phases: 5
   total_plans: 11
-  completed_plans: 10
+  completed_plans: 11
   percent: 100
 ---
 
@@ -57,6 +57,7 @@ Progress: [##########] 100%
 | Phase 04 P01 | 3min | 2 tasks | 8 files |
 | Phase 04 P02 | 2min | 3 tasks | 6 files |
 | Phase 05 P01 | 3min | 2 tasks | 8 files |
+| Phase 05 P02 | 2min | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -95,6 +96,7 @@ Recent decisions affecting current work:
 - [Phase 04]: Speed state at page level for instant time updates without A* recomputation
 - [Phase 05]: Shared renderToCanvas pipeline reused by PNG and PDF export
 - [Phase 05]: NauticalMap forwardRef exposes SVG element for export access
+- [Phase 05]: ExportMenu in header with dropdown for SVG/PNG/PDF, trip summary as single-line string
 
 ### Pending Todos
 
@@ -108,6 +110,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T16:28:38.937Z
-Stopped at: Completed 05-01-PLAN.md
+Last session: 2026-03-07T16:54:39.653Z
+Stopped at: Completed 05-02-PLAN.md
 Resume file: None
