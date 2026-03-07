@@ -34,7 +34,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md — Types, dependencies, and curated port database (DATA-03)
 - [x] 01-02-PLAN.md — Geo processing pipeline and navigation grid generation (DATA-01, DATA-02)
-- [ ] 01-03-PLAN.md — Validation tests and integration verification (DATA-01, DATA-02, DATA-03)
+- [x] 01-03-PLAN.md — Validation tests and integration verification (DATA-01, DATA-02, DATA-03)
 
 ### Phase 2: Map Visualization
 **Goal**: Users see a beautiful nautical chart of the Great Lakes with all ports visible
@@ -44,11 +44,11 @@ Plans:
   1. Map renders as SVG with nautical chart styling (parchment background, compass rose, decorative depth shading, lat/lng grid)
   2. All curated ports display as markers on the map with labels
   3. Selected ports are visually highlighted and distinguishable from unselected ports
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — Nautical chart SVG core: projection, coastlines, graticule, compass rose, depth shading (VIZ-01)
+- [ ] 02-02-PLAN.md — Port markers with hover/selection and app page wiring (VIZ-02)
 
 ### Phase 3: Pathfinding Engine
 **Goal**: The app can compute and display water-only routes between any two ports on the Great Lakes
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 3/3 | Complete   | 2026-03-07 |
-| 2. Map Visualization | 0/? | Not started | - |
+| 2. Map Visualization | 0/2 | Planned | - |
 | 3. Pathfinding Engine | 0/? | Not started | - |
 | 4. Route Planning UI | 0/? | Not started | - |
 | 5. Export Pipeline | 0/? | Not started | - |
