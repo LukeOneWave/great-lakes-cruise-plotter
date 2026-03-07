@@ -8,8 +8,10 @@ import { CoastlineLayer } from "./CoastlineLayer";
 import { GraticuleLayer } from "./GraticuleLayer";
 import { CompassRose } from "./CompassRose";
 import { PortLayer } from "./PortLayer";
+import { RouteLayer } from "./RouteLayer";
 import { MAP_CONFIG } from "./constants";
 import type { Port } from "@/lib/ports/types";
+import type { RoutePoint } from "@/lib/pathfinding/types";
 
 interface NauticalMapProps {
   width?: number;
@@ -17,6 +19,7 @@ interface NauticalMapProps {
   ports?: Port[];
   selectedPortIds?: Set<string>;
   onPortSelect?: (portId: string) => void;
+  routePoints?: RoutePoint[];
 }
 
 // Load coastline data once (static, never changes)
@@ -28,6 +31,7 @@ export function NauticalMap({
   ports = [],
   selectedPortIds = new Set<string>(),
   onPortSelect,
+  routePoints,
 }: NauticalMapProps) {
   const { projection, path } = useMapProjection(width, height, coastlineData);
   const [hoveredPortId, setHoveredPortId] = useState<string | null>(null);
@@ -76,6 +80,11 @@ export function NauticalMap({
           onSelect={(id) => onPortSelect?.(id)}
           onHover={setHoveredPortId}
         />
+      )}
+
+      {/* Layer 5.5: Route line (above ports, below compass) */}
+      {routePoints && routePoints.length >= 2 && (
+        <RouteLayer routePoints={routePoints} projection={projection} />
       )}
 
       {/* Layer 6: Compass rose (above everything) */}

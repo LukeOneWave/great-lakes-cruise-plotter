@@ -3,12 +3,21 @@
 import { useMemo, useState, useCallback } from "react";
 import { NauticalMap } from "@/components/map/NauticalMap";
 import { getAllPorts } from "@/lib/ports/ports";
+import { loadGrid } from "@/lib/grid/grid";
+import { findRoute } from "@/lib/pathfinding/route";
 
 export default function Home() {
   const ports = useMemo(() => getAllPorts(), []);
+  const grid = useMemo(() => loadGrid(), []);
   const [selectedPortIds, setSelectedPortIds] = useState<Set<string>>(
     new Set()
   );
+
+  const routeResult = useMemo(() => {
+    const ids = Array.from(selectedPortIds);
+    if (ids.length !== 2) return null;
+    return findRoute(grid, ids[0], ids[1]);
+  }, [grid, selectedPortIds]);
 
   const handlePortSelect = useCallback((portId: string) => {
     setSelectedPortIds((prev) => {
@@ -34,6 +43,7 @@ export default function Home() {
           ports={ports}
           selectedPortIds={selectedPortIds}
           onPortSelect={handlePortSelect}
+          routePoints={routeResult?.points}
         />
       </main>
     </div>
