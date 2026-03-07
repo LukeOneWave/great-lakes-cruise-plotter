@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { geoConicEqualArea, geoPath } from "d3-geo";
-import type { FeatureCollection, GeoPermissibleObjects } from "geojson";
-import type { GeoProjection } from "d3-geo";
+import type { FeatureCollection } from "geojson";
+import type { GeoProjection, GeoPermissibleObjects } from "d3-geo";
 import { MAP_CONFIG } from "./constants";
 
 interface UseMapProjectionResult {

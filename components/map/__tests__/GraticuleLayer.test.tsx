@@ -66,10 +66,10 @@ describe("GraticuleLayer", () => {
     const texts = graticuleLayer?.querySelectorAll("text");
     expect(texts!.length).toBeGreaterThan(0);
 
-    // Check for degree labels like "84W" or "45N"
+    // Check for degree labels like "84°W" or "45°N"
     const textContents = Array.from(texts!).map((t) => t.textContent);
-    const hasLongitudeLabel = textContents.some((t) => t?.match(/\d+W/));
-    const hasLatitudeLabel = textContents.some((t) => t?.match(/\d+N/));
+    const hasLongitudeLabel = textContents.some((t) => t?.match(/\d+.*W/));
+    const hasLatitudeLabel = textContents.some((t) => t?.match(/\d+.*N/));
     expect(hasLongitudeLabel).toBe(true);
     expect(hasLatitudeLabel).toBe(true);
   });
