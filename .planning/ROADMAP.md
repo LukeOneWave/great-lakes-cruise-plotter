@@ -29,11 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Connecting waterways (St. Marys River, Straits of Mackinac, Detroit/St. Clair River, Welland Canal, upper St. Lawrence) are present and navigable in the grid
   3. User can search a curated port list and see ~80-100 Great Lakes ports with accurate coordinates
   4. TopoJSON coastline data is under 500KB and navigation grid loads in under 1 second
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Types, dependencies, and curated port database (DATA-03)
+- [ ] 01-02-PLAN.md — Geo processing pipeline and navigation grid generation (DATA-01, DATA-02)
+- [ ] 01-03-PLAN.md — Validation tests and integration verification (DATA-01, DATA-02, DATA-03)
 
 ### Phase 2: Map Visualization
 **Goal**: Users see a beautiful nautical chart of the Great Lakes with all ports visible
@@ -100,7 +101,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 0/? | Not started | - |
+| 1. Data Foundation | 0/3 | Planning complete | - |
 | 2. Map Visualization | 0/? | Not started | - |
 | 3. Pathfinding Engine | 0/? | Not started | - |
 | 4. Route Planning UI | 0/? | Not started | - |
