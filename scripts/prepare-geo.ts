@@ -186,25 +186,23 @@ async function main(): Promise<void> {
   console.log("\nStep 6: Simplifying...");
   topo = presimplify(topo as any) as unknown as Topology;
 
-  // Try increasing simplification until under 500KB
-  const thresholds = [0.02, 0.03, 0.04, 0.05, 0.08, 0.10];
-  let simplified: Topology | null = null;
-  let finalSize = 0;
+  // Skip aggressive simplification — use minimal simplification for smooth coastlines
+  let simplified: Topology = quantize(topo as any, 1e6) as unknown as Topology;
+  let json = JSON.stringify(simplified);
+  let finalSize = Buffer.byteLength(json, "utf-8");
+  console.log(`  No simplification, quantize 1e6: ${(finalSize / 1024).toFixed(1)}KB`);
 
-  for (const threshold of thresholds) {
-    const q = quantile(topo as any, threshold);
-    simplified = simplify(topo as any, q) as unknown as Topology;
-
-    // Step 7: Quantize
-    simplified = quantize(simplified as any, 1e5) as unknown as Topology;
-
-    const json = JSON.stringify(simplified);
-    finalSize = Buffer.byteLength(json, "utf-8");
-
-    console.log(`  Threshold ${threshold}: ${(finalSize / 1024).toFixed(1)}KB`);
-
-    if (finalSize < 512000) {
-      break;
+  // If too large, apply gentle simplification
+  if (finalSize > 1024000) {
+    const thresholds = [0.001, 0.002, 0.005];
+    for (const threshold of thresholds) {
+      const q = quantile(topo as any, threshold);
+      simplified = simplify(topo as any, q) as unknown as Topology;
+      simplified = quantize(simplified as any, 1e6) as unknown as Topology;
+      json = JSON.stringify(simplified);
+      finalSize = Buffer.byteLength(json, "utf-8");
+      console.log(`  Threshold ${threshold}: ${(finalSize / 1024).toFixed(1)}KB`);
+      if (finalSize < 1024000) break;
     }
   }
 
