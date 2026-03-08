@@ -13,10 +13,53 @@ import gridData from "./navigation-grid.json";
 export { toCell, isWater };
 
 /**
+ * Patch narrow waterway gaps in the grid.
+ * The Detroit River / St. Clair River corridor has gaps at ~2km resolution
+ * that prevent A* from finding Lake Erie → Lake Huron routes.
+ * This fills a narrow bridge of water cells to ensure connectivity.
+ */
+function patchWaterwayGaps(grid: NavigationGrid): void {
+  const { bbox, cellSize, width, data } = grid;
+
+  function lngLatToCell(lng: number, lat: number): [number, number] {
+    const col = Math.floor((lng - bbox[0]) / cellSize);
+    const row = Math.floor((bbox[3] - lat) / cellSize);
+    return [col, row];
+  }
+
+  function setWater(col: number, row: number) {
+    if (col >= 0 && col < width && row >= 0 && row < grid.height) {
+      data[row * width + col] = 1;
+    }
+  }
+
+  // Detroit River corridor: fill a wide water path connecting
+  // Lake Erie (ends ~lat 42.04) to Lake St. Clair (starts ~lat 42.22)
+  // Bridge at lng -83.10 through -82.90 for robust connectivity
+  for (let lat = 42.00; lat <= 42.36; lat += cellSize) {
+    for (let lng = -83.18; lng <= -82.90; lng += cellSize) {
+      const [col, row] = lngLatToCell(lng, lat);
+      setWater(col, row);
+    }
+  }
+
+  // St. Clair River: connect Lake St. Clair to Lake Huron
+  // Wide bridge from lat 42.48 to 43.02, lng -82.60 to -82.30
+  for (let lat = 42.48; lat <= 43.05; lat += cellSize) {
+    for (let lng = -82.62; lng <= -82.28; lng += cellSize) {
+      const [col, row] = lngLatToCell(lng, lat);
+      setWater(col, row);
+    }
+  }
+}
+
+/**
  * Load the pre-computed navigation grid.
  */
 export function loadGrid(): NavigationGrid {
-  return gridData as NavigationGrid;
+  const grid = { ...gridData, data: [...gridData.data] } as NavigationGrid;
+  patchWaterwayGaps(grid);
+  return grid;
 }
 
 /**

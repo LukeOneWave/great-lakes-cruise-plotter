@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef, useMemo, useState } from "react";
-import { loadCoastlines } from "@/lib/geo/load-geo";
+import { loadCoastlines, loadStateBoundaries } from "@/lib/geo/load-geo";
 import { useMapProjection } from "./use-map-projection";
 import { MapDefs } from "./MapDefs";
 import { CoastlineLayer } from "./CoastlineLayer";
@@ -9,6 +9,8 @@ import { GraticuleLayer } from "./GraticuleLayer";
 import { CompassRose } from "./CompassRose";
 import { PortLayer } from "./PortLayer";
 import { RouteLayer } from "./RouteLayer";
+import { CityLabels } from "./CityLabels";
+import { StateBoundaryLayer } from "./StateBoundaryLayer";
 import { MAP_CONFIG } from "./constants";
 import type { Port } from "@/lib/ports/types";
 import type { RoutePoint } from "@/lib/pathfinding/types";
@@ -22,8 +24,9 @@ interface NauticalMapProps {
   routePoints?: RoutePoint[];
 }
 
-// Load coastline data once (static, never changes)
+// Load geo data once (static, never changes)
 const coastlineData = loadCoastlines();
+const stateBoundaryData = loadStateBoundaries();
 
 export const NauticalMap = forwardRef<SVGSVGElement, NauticalMapProps>(function NauticalMap({
   width = MAP_CONFIG.defaultWidth,
@@ -70,6 +73,12 @@ export const NauticalMap = forwardRef<SVGSVGElement, NauticalMapProps>(function 
 
       {/* Layer 4: Coastline fills (land over graticule) */}
       <CoastlineLayer features={coastlineData.features} path={path} />
+
+      {/* Layer 4.5: State/province boundary lines */}
+      <StateBoundaryLayer features={stateBoundaryData.features} path={path} />
+
+      {/* Layer 4.6: City labels on land for context */}
+      <CityLabels projection={projection} />
 
       {/* Layer 5: Port markers (above land, below compass rose) */}
       {ports.length > 0 && (

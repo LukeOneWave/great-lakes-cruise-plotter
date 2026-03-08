@@ -7,6 +7,7 @@ import { loadGrid } from "@/lib/grid/grid";
 import { findRoute } from "@/lib/pathfinding/route";
 import { computeDistanceNm } from "@/lib/pathfinding/distance";
 import { RoutePlannerPanel } from "@/components/route-planner/RoutePlannerPanel";
+import { RouteInput } from "@/components/route-planner/RouteInput";
 import type { RouteLeg } from "@/lib/pathfinding/types";
 import { ExportMenu } from "@/components/ui/ExportMenu";
 import type { Port } from "@/lib/ports/types";
@@ -101,6 +102,7 @@ export default function Home() {
           />
         </div>
         <div className="w-full lg:w-80 xl:w-96 border-t lg:border-t-0 lg:border-l border-neutral-200 bg-white overflow-y-auto">
+          <RouteInput ports={ports} onRouteSubmit={setStops} />
           <RoutePlannerPanel
             stops={stopPorts}
             routeLegs={routeLegs}
